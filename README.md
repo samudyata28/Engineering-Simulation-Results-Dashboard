@@ -8,6 +8,18 @@ FastAPI backend to a React/Vite frontend.
 peak magnitude for **0 ≤ f ≤ 50 Hz (inclusive)** must be **≤ 15 mm**. Frequencies above 50 Hz are plotted but never affect
 the verdict. This is a data-review criterion, not a safety assessment.
 
+## Screenshots
+
+| Overview | Response (failing revision) |
+|---|---|
+| ![Overview](screenshots/1-overview.png) | ![Response](screenshots/2-response.png) |
+| **Compare revisions** | **History & trace** |
+| ![Compare](screenshots/3-compare.png) | ![History](screenshots/4-history.png) |
+
+**Demands** (filterable table, expanded row shows result history across revisions)
+
+![Demands](screenshots/5-demands.png)
+
 ## What the supplied data shows
 
 | Component | rev1 | rev2 | rev3 | Reading |
@@ -21,7 +33,7 @@ the verdict. This is a data-review criterion, not a safety assessment.
 Requirements: Python 3.11+, Node 20+.
 
 ```bash
-./run.sh            # install, build UI, import CSVs, seed demands, serve on http://localhost:8000
+./run.sh            # (or `bash run.sh`) install, build UI, import CSVs, seed demands, serve on http://localhost:8000
 ```
 
 Or step by step:
